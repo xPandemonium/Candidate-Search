@@ -9,6 +9,6 @@ export default defineConfig({
     port: 3000,
     open: true,
     host: true,
-    allowedHosts: ['https://candidate-search-pec3.onrender.com']
+    allowedHosts: ['https://candidate-search-pec3.onrender.com', 'candidate-search-pec3.onrender.com']
   },
 });
