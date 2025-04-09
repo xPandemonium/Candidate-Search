@@ -33,7 +33,7 @@ body {
   background-repeat: no-repeat no-repeat;
   background-position: center center;
   margin: 0;
-  place-items: center;
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
@@ -44,10 +44,10 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  padding: 0.5em 0.75em;
+  font-size: 2.5em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
@@ -114,7 +114,75 @@ tbody tr:nth-child(odd) {
   font-weight: 700;
 }
 
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .table {
   width: 80vw;
   table-layout: fixed;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.candidate {
+  background-color: #000;
+  border-radius: 30px;
+}
+
+.candidate img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.candidate div {
+  padding: 20px;
+  margin-top: -30px;
+  margin-bottom: -10px;
+}
+
+.buttons {
+  display: flex;
+  margin: 20px 0;
+  padding-bottom: 40px;
+  justify-content: space-between;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.green {
+  background-color: #00ff00;
+}
+
+.img { 
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.saved-canidates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.saved-canidates td {
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.saved-canidates button {
+  margin: 10px;
 }
