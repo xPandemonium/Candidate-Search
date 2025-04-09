@@ -5,4 +5,10 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   envDir: './environment',
   plugins: [react()],
+  server: {
+    port: 3000,
+    open: true,
+    host: true,
+    allowedHosts: ['https://candidate-search-pec3.onrender.com']
+  },
 });
